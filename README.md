@@ -15,7 +15,7 @@ Below are the available varaibles you will need to supply to the role.
 
 | Variable | Description |
 | --- | --- |
-| hostname | remote system to connect to (FQDN or IP) |
+| hostname | remote system/s to connect to (FQDN or IP) - Define the variable as a list.|
 | username | username to connect to remote system |
 | password | password to connect to remote system |
 | ssh_public_key | public key file (absolute path) to set into remote system |
