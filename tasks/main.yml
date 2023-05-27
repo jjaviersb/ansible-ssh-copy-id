@@ -3,9 +3,10 @@
 
 - name: Inject SSH public key into remote system
   ssh_copy_id:
-    hostname: "{{ hostname }}"
+    hostname: "{{ item }}"
     username: "{{ username }}"
     password: "{{ password }}"
     ssh_public_key: "{{ ssh_public_key }}"
     hetzner_storagebox: "{{ hetzner_storagebox }}"
     ssh_port: "{{ ssh_port }}"
+  loop: "{{ hostnames }}"
